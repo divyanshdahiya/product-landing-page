@@ -14,13 +14,32 @@ body {
   font-size: 150%;
   line-height: 1.5;
 }
+img {
+  width: 100%;
+}
+.mouse-colors {
+  text-align: center;
+  margin: 40px 0px;
+}
+.features p {
+  color: #738688;
+}
+#section4 {
+  flex-direction: column;
+  align-items: center;
+}
+iframe {
+  width: 80%;
+  resize: both;
+  overflow: auto;
+}
 nav {
   background-color: #41d42b;
   display: flex;
   justify-content: center;
   padding: 15px;
   margin-top: 0px !important;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 .nav-link {
   color: black;
@@ -28,15 +47,11 @@ nav {
   margin: 0 15px;
 }
 .header-right img {
-  max-width: 230%;
+  width: 230%;
   border: solid 10px #41d42b;
   border-radius: 50%;
 }
-.container {
-  display: flex;
-  max-width: 1000px;
-  margin: auto;
-}
+
 .btn {
   background-color: #41d42b;
   display: inline-block;
@@ -52,21 +67,23 @@ nav {
   background-color: black;
   transform: translate(2px, 2px);
 }
-.mouse-colors {
+.container {
+  display: flex;
+  margin: auto;
   text-align: center;
-  margin: 40px 0px;
-}
-.features p {
-  color: #738688;
-}
-.feature1-img {
-  max-width: 60%;
+  max-width: 1000px;
 }
 .container-1 {
-  min-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
+  display: flex;
+  margin: auto;
   text-align: center;
+  max-width: 1000px;
+  flex-direction: column;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.feature1-img {
+  width: 60%;
 }
 .form-section {
   background-color: #41d42b;
@@ -85,4 +102,43 @@ footer {
   color: #41d42b;
   text-align: center;
   padding: 10px;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+.price {
+  list-style-type: none;
+  border: 1px solid #41d42b;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+.price li {
+  border-bottom: 1px solid #41d42b;
+  padding: 20px;
+  text-align: center;
+}
+.price .grey {
+  font-size: 20px;
+  background-color: #41d42b;
+}
+.price .grey a {
+  text-decoration: none;
+  color: #111;
+}
+.price .grey a:hover {
+  color: #41d42b;
+  background-color: black;
 }
