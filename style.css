@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -47,7 +48,7 @@ nav {
   margin: 0 15px;
 }
 .header-right img {
-  width: 230%;
+  width: 100%;
   border: solid 10px #41d42b;
   border-radius: 50%;
 }
@@ -141,4 +142,14 @@ footer {
 .price .grey a:hover {
   color: #41d42b;
   background-color: black;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.header-left {
+  width: 65%;
+}
+.header-right {
+  width: 35%;
 }
